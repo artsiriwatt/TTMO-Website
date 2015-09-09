@@ -1,6 +1,180 @@
-#img.source-image {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  min-height: 100%;
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  height: 100%;
+  font-family: 'Open Sans', arial, sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+h1,
+h2 {
+  text-indent: -99999em;
+  visibility: hidden;
+  position: absolute; }
+
+.nospam {
+  display: none; }
+
+.image {
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+  height: 100%;
+  position: relative;
+  background: url(../images/Title.jpg) no-repeat 50% 50%;
+  background-size: cover; }
+
+.sign-up {
+  text-align: center;
+  padding: 65px 0 80px; }
+
+.mc-label {
+  display: block;
+  color: #404040;
+  font-family: 'Vollkorn', serif;
+  margin-bottom: 20px;
+  font-size: 22px; }
+
+.mc-input,
+.mc-submit {
+  padding: 10px 0;
+  font-size: 15px;
+  line-height: 20px;
+  border: none;
+  -webkit-box-shadow: 0 0 0 1px #e7e7e7;
+  box-shadow: 0 0 0 1px #e7e7e7;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+
+.mc-input {
+  -webkit-appearance: none;
+  display: inline-block;
+  width: 180px;
+  padding: 10px 0;
+  background: #fcfcfc;
+  text-align: center;
+  color: #bababa;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased; }
+  .mc-input:focus::-webkit-input-placeholder {
+    color: transparent; }
+  .mc-input:focus:-moz-placeholder {
+    color: transparent; }
+  .mc-input:focus::-moz-placeholder {
+    color: transparent; }
+  .mc-input:focus:-ms-input-placeholder {
+    color: transparent; }
+
+.mc-submit {
+  -webkit-appearance: none;
+  display: inline-block;
+  width: 90px;
+  background: #e3e3e3;
+  height: 40px;
+  padding: 10px 0;
+  cursor: pointer;
+  opacity: .8;
+  -webkit-transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out; }
+  .mc-submit:hover {
+    opacity: 1; }
+
+.social {
+  padding: 30px 0; }
+  .social li {
+    font-size: 0;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0; }
+  .social a {
+    opacity: .8;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-indent: -99999em;
+    background-size: 40px 40px;
+    -webkit-transition: opacity .1s ease-in-out;
+    -moz-transition: opacity .1s ease-in-out;
+    transition: opacity .1s ease-in-out; }
+    .social a:hover {
+      opacity: 1; }
+
+.social-twitter {
+  background: url(../images/social_twitter.png) no-repeat 0 0; }
+
+.social-facebook {
+  background: url(../images/social_facebook.png) no-repeat 0 0; }
+
+.social-email {
+  background: url(../images/social_email.png) no-repeat 0 0; }
+
+.small-print {
+  clear: both;
+  color: #888;
+  font-size: 12px;
+  line-height: 1.6;
+  width: 90%;
+  margin: 15px auto 0 auto; }
+
+@media screen and (min-width: 520px) {
+  .image {
+    background: url(../images/Title.jpg) no-repeat 50% 50%;
+    background-size: cover; }
+
+  .small-print {
+    width: 500px; }
+
+  .mc-input {
+    width: 220px; }
+
+  .mc-submit {
+    width: 120px; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .image {
+    background: url(../images/Title.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    margin-top: -1px;
+    padding-bottom: 1px; }
+
+  .twitter {
+    right: 20px;
+    bottom: 20px; } }
