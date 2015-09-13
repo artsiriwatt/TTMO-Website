@@ -31,10 +31,6 @@ q:before, q:after {
   content: '';
   content: none; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
 html {
   -webkit-text-size-adjust: 100%;
   min-height: 100%;
@@ -64,7 +60,7 @@ h2 {
 
 .sign-up {
   text-align: center;
-  padding: 30px 0 80px; }
+  padding: 30px 0 10px; }
 
 .mc-label {
   display: block;
@@ -148,8 +144,9 @@ h2 {
   margin: 15px auto 0 auto; }
 
 .large-print {
-  font-family: 'Vollkorn', serif;
-  padding: 30px 0 15px; 
+  font-family: 'Vollkorn';
+  font-weight: 500;
+  padding: 20px 0 5px; 
   text-align: center;
   clear: both;
   color: #444;
@@ -159,13 +156,20 @@ h2 {
   margin: 5px auto 0 auto; }
 
 .medium-print {
-  font-family: 'Vollkorn', serif;
+  font-family: 'Vollkorn';
+  font-weight: 400;
+  padding: 60px 0 5px; 
   text-align: center;
   clear: both;
   color: #444;
-  font-size: 16px;
+  font-size: 22px;
   width: 90%;
   margin: 5px auto 0 auto; }
+
+a {
+  color: #444;
+  text-decoration: none;
+}
 
 @media screen and (min-width: 520px) {
   .image {
