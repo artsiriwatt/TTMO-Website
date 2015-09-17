@@ -144,8 +144,8 @@ h2 {
   margin: 15px auto 0 auto; }
 
 .large-print {
-  font-family: 'Vollkorn';
-  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   padding: 20px 0 5px; 
   text-align: center;
   clear: both;
@@ -156,19 +156,19 @@ h2 {
   margin: 5px auto 0 auto; }
 
 .medium-print {
-  font-family: 'Vollkorn';
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   padding: 60px 0 5px; 
   text-align: center;
   clear: both;
   color: #444;
-  font-size: 22px;
+  font-size: 20px;
   width: 90%;
   margin: 5px auto 0 auto; }
 
 a {
   color: #444;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 520px) {
